@@ -8,11 +8,12 @@ import time
 # import client
 from chatter_mlx import Chatter
 
-
-# MODEL = "mixtral" # "codellama:70b-instruct"
-MODEL = "mlx-community/CodeLlama-70b-Instruct-hf-4bit-MLX"
+# MODEL = "mlx-community/CodeLlama-70b-Instruct-hf-4bit-MLX"
+# MODEL = "mlx-community/phi-2"
+# MODEL = "mlx-community/Mixtral-8x7B-Instruct-v0.1"
+# MODEL = "mlx-community/Mistral-7B-Instruct-v0.2-4-bit"
 # MODEL = "mlx-community/NeuralBeagle14-7B-mlx"
-# MODEL = "mlx-community/NeuralBeagle14-7B-4bit-mlx"
+MODEL = "mlx-community/NeuralBeagle14-7B-4bit-mlx"
 
 @st.cache_resource
 def Initialize_model(model_id):
